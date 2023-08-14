@@ -5,7 +5,7 @@ import org.junit.Test;
 import utilities.Base;
 import utilities.ConfigReader;
 
-public class ParaBank_TitleVerification extends Base {
+public class TitleVerification extends Base {
 
     @Test
     public void test_title_verification() {

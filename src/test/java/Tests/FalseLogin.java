@@ -10,7 +10,7 @@ import utilities.ConfigReader;
 
 import java.time.Duration;
 
-public class ParaBank_NonValid_Credention_LogIn extends Base {
+public class FalseLogin extends Base {
 
 
     @Test

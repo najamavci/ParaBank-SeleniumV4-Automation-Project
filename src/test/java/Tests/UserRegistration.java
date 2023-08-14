@@ -7,12 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utilities.Base;
 import utilities.ConfigReader;
 
 import java.time.Duration;
 
-public class ParaBank_UserRegistration extends userRegisterPage {
+public class UserRegistration extends userRegisterPage {
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
