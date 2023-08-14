@@ -1,0 +1,7 @@
+Pages\userRegisterPage.class
+utilities\Base.class
+Tests\ParaBank_NonValid_Credention_LogIn.class
+utilities\ConfigReader.class
+utilities\Driver.class
+Tests\ParaBank_UserRegistration.class
+Tests\ParaBank_TitleVerification.class
