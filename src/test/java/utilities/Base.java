@@ -1,21 +1,12 @@
 ﻿package utilities;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.ConfigReader;
+import utilities.Driver;
 
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 public class Base {
     protected WebDriver driver;
-
     public Base() {
         this.driver = Driver.getDriver();
         PageFactory.initElements(driver, this);
@@ -30,10 +21,10 @@ public class Base {
     }
 
     public void implicitWait(int seconds) {
-        driver.manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }
 
-    public void closeDriver() {Driver.closeDriver();
+    public void closeDriver() {
+        Driver.closeDriver();
     }
 }
-

@@ -12,8 +12,6 @@ public class Driver {
     public Driver(){
     }
 
-    //access modifiers public, private, default, protected
-
     private static WebDriver driver;
 
     static public WebDriver getDriver(){

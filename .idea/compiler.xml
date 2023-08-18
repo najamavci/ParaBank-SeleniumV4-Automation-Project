@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ParaBank-SeleniumV4-Automation-Project" />
+        <module name="SeleniumV4" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SeleniumV4" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
