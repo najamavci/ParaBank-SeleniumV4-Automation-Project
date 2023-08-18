@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        git 'Default Git' // Use the name you specified in the Git tool configuration
+        git 'Default' // Use the name you specified in the Git tool configuration
         maven 'MAVEN_HOME' // Replace with the appropriate Maven tool name if needed
     }
 
