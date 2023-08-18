@@ -10,20 +10,20 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'java -cp target/*:target/test-classes org.testng.TestNG testng.xml'
+                sh 'mvn test'
             }
         }
     }
 
     post {
         always {
-            junit '**/test-output/testng-results.xml'
+            junit '**/target/surefire-reports/*.xml'
         }
     }
 }
